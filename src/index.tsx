@@ -5,10 +5,9 @@ import App from "./App";
 import { Auth0Provider } from "@auth0/auth0-react";
 import { getConfig } from "./config";
 import history from "./utils/history";
-import awsconfig from "./aws-exports";
-import Amplify from "aws-amplify";
 
-Amplify.configure(awsconfig);
+
+
 
 const onRedirectCallback = (appState) => {
   history.push(

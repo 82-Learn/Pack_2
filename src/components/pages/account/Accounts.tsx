@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import * as React from "react";
 import styled from "styled-components";
-import { API } from "aws-amplify";
 
 const BaseComponent = styled.div`
   min-height: 100vh;
@@ -13,18 +12,13 @@ const BaseComponent = styled.div`
   background-color: black;
 `;
 
-export default function Accounts() {
-  const [greeting, setGreeting] = useState("loading");
-  useEffect(() => {
-    fetchGreeting();
-  }, []);
-  async function fetchGreeting() {
-    const greetingData = await API.get("Goapi", "/accounts", {});
-    setGreeting(greetingData.message);
-  }
+const Accounts = () => {
   return (
     <BaseComponent>
-      <h2>{greeting}</h2>
+      <p>Accounts functions page</p>
+      <p>Testing ths page</p>
     </BaseComponent>
   );
-}
+};
+
+export default Accounts;
