@@ -1,1 +1,3 @@
-# PAYMENT GATEWAT - 82 PAY
+# PAYMENT GATEWAY - 82 PAY
+
+- version 1.0
