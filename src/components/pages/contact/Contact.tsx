@@ -29,7 +29,7 @@ export default function Contact() {
 
   return (
     <BaseComponent>
-      <h1>get Data</h1>
+      <h1>Data</h1>
       {myArray.map((value, index) => (
         <li key={`${index}-${value}`}>{value}</li>
       ))}
