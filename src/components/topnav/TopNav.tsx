@@ -4,7 +4,6 @@ import SideNav from "../sidebar/SideNav";
 import { Link } from "react-router-dom";
 import myImage from "../../assets/favicon.png";
 import LoginButton from "../loginButton";
-import LogoutButton from "../logoutButton";
 import { useAuth0 } from "@auth0/auth0-react";
 
 
@@ -76,16 +75,11 @@ const TopNav = () => {
         <Link to="/"></Link>
       </NavLogo>
    
-        {!isAuthenticated && (
+
         <NavLinks>
           <LoginButton />
           </NavLinks>
-        )}
-        {isAuthenticated && (
-          <NavLinks>
-            <LogoutButton />
-        </NavLinks>
-        )}
+ 
 
     </Topbarbase>
   );
