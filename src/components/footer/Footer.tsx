@@ -5,6 +5,7 @@ import moment from "moment";
 const StyledFooter = styled.div`
   background-color: rgb(26, 26, 26);
   min-height: 10%;
+  padding-bottom: 0vh;
   /* equal to footer height */
   margin-bottom: -142px;
   margin: auto;
@@ -23,6 +24,8 @@ const Row = styled.div`
   grid-gap: 100px;
   margin-right: 20%;
   margin-left: 20%;
+  margin-top: 20%;
+  margin-bottom: 10%;
 `;
 
 const Column = styled.div`
@@ -48,6 +51,7 @@ const Container = styled.div`
   max-width: 0 auto;
   margin: 0 auto;
   text-align: center;
+
 `;
 
 const FooterLink2 = styled.div`
@@ -86,10 +90,10 @@ const Footer = () => (
           <FooterLink2>information 2</FooterLink2>
         </Column>
       </Row>
-      <Copyright>
+    </Container>
+    <Copyright>
         <p>Copyright &copy; 82 Learn Pty Ltd {moment().format("YYYY")}.</p>
       </Copyright>
-    </Container>
   </StyledFooter>
 );
 
