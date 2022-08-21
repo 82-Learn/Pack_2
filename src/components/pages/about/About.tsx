@@ -15,8 +15,6 @@ const BaseComponent = styled.div`
 const About = () => {
   return (
     <BaseComponent>
-      <p>ABOUT PAGE</p>
-      <p>Testing ths page</p>
     </BaseComponent>
   );
 };

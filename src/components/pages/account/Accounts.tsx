@@ -15,8 +15,7 @@ const BaseComponent = styled.div`
 const Accounts = () => {
   return (
     <BaseComponent>
-      <p>Accounts functions page</p>
-      <p>Testing ths page</p>
+
     </BaseComponent>
   );
 };

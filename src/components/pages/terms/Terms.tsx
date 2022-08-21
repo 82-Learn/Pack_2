@@ -18,7 +18,6 @@ const BaseComponent = styled.div`
 const Terms = () => {
     return (
         <BaseComponent>
-            <p>TERMS PAGE</p>
         </BaseComponent>
     );
 };
