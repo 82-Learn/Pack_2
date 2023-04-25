@@ -73,7 +73,7 @@ const Copyright = styled.div`
 const FooterButton = styled.button`
   margin: 10px 5px;
   padding: 15px 30px;
-  background: purple;
+  background: #ff6600 ;
   color: white;
   cursor: pointer;
   border-radius: 30px;
@@ -85,18 +85,18 @@ const Footer = () => (
     <Container>
       <Row>
         <Column>
-          <Heading>ABOUT 82 </Heading>
+          <Heading></Heading>
 
 
-          <FooterButton onClick={(event) => (window.location.href ="https://discord.gg/xzQZDUMRCv")}>Discord</FooterButton>
+          <FooterButton></FooterButton>
         </Column>
         <Column>
-          <Heading>CONTACT 82 </Heading>
-        <FooterButton>Other</FooterButton>
+          <Heading></Heading>
+        <FooterButton></FooterButton>
         </Column>
         <Column>
-          <Heading>ABOUT 82</Heading>
-          <FooterButton>Other</FooterButton>
+          <Heading></Heading>
+          <FooterButton></FooterButton>
         </Column>
       </Row>
     </Container>

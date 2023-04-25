@@ -18,9 +18,9 @@ const Button = styled.button`
   grid-template-columns: repeat(auto-fill, minmax(100px, auto));
 `;
 
-const LoginButton = () => {
+const RegisterButton = () => {
   const { loginWithRedirect } = useAuth0();
   return <Button onClick={() => loginWithRedirect()}>Register</Button>;
 };
 
-export default LoginButton;
+export default RegisterButton;

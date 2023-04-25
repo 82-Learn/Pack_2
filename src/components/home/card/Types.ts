@@ -1,6 +1,6 @@
 export type CardType = {
     title: string;
-    date: number;
+    input: string;
     imgUrl: string;
     text: string;
 };

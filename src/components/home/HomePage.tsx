@@ -26,19 +26,20 @@ export const CardContainer = styled.div`
 const HomePage = () => {
   return (
     <BaseComponent>
-      <h2>82 PAY</h2>
+      <h2>PACK 2</h2>
+        <h3>CAIRNS TO PALM COVE</h3>
       <CardContainer>
         <Card
-          title={"A"}
-          text={"Transfer using blockchain"}
-          date={1}
+          title={"From"}
+          text={"Pick-up Address"}
+          input={"details"}
           imgUrl={img1}
         />
-        <Card title={"B"} text={"Pay"} date={2} imgUrl={img1} />
+        <Card title={"To"} text={"Drop-off Address"} input={"details"}imgUrl={img1} />
         <Card
-          title={"C"}
-          text={"Cost reduction by amount"}
-          date={2}
+          title={"Price"}
+          text={"Rough estimate"}
+          input={"details"}
           imgUrl={img1}
         />
       </CardContainer>

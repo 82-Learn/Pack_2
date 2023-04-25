@@ -6,24 +6,24 @@ import { FaCog } from "react-icons/fa";
 
 export const SidebarData: SidebarItem[] = [
   {
-    title: "ACCOUNTS DEMO",
+    title: "Delivery",
     path: "/accounts",
     icon: <AiOutlineHome />,
     iconClosed: <AiFillCaretDown />,
     iconOpened: <AiFillCaretUp />,
   },
   {
-    title: "TERMS",
+    title: "Our Terms",
     path: "/terms",
     icon: <FaCog />,
   },
   {
-    title: "ABOUT",
+    title: "About",
     path: "/about-us",
     icon: <BiTestTube />,
   },
   {
-    title: "CONTACT",
+    title: "Contact",
     path: "/contact-us",
     icon: <BiTestTube />,
   },

@@ -2,8 +2,8 @@ import * as React from "react";
 import styled from "styled-components";
 import SideNav from "../sidebar/SideNav";
 import { Link } from "react-router-dom";
-import myImage from "../../assets/favicon.png";
 import LoginButton from "../loginButton";
+import RegisterButton from "../registerButton";
 import { useAuth0 } from "@auth0/auth0-react";
 
 
@@ -44,7 +44,6 @@ const NavLinks = styled.ul`
 
 const NavLogo = styled.ul`
   & a {
-    background-image: url(${myImage});
     display: flex;
     font-size: 15px;
     color: white;
@@ -78,6 +77,7 @@ const TopNav = () => {
 
         <NavLinks>
           <LoginButton />
+          <RegisterButton />
           </NavLinks>
  
 
