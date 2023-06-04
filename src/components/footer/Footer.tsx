@@ -1,6 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
 import moment from "moment";
+import { useNavigate } from "react-router-dom";
+import Button from '@mui/material/Button';
 
 const StyledFooter = styled.div`
   background-color: rgb(26, 26, 26);
@@ -54,20 +56,13 @@ const Container = styled.div`
 
 `;
 
-const FooterLink2 = styled.div`
-  color: white;
-  margin-bottom: 20px;
-  font-size: 14px;
-  text-decoration: none;
-  text-align: center;
-  padding: 8px 18px;
-  line-height: 1.6;
-`;
+
 
 const Copyright = styled.div`
   max-width: 0 auto;
   display: flex;
-  margin-left: 20px;
+  font-size: 13px;
+  margin-left: 2  0px;
 `;
 
 const FooterButton = styled.button`
@@ -80,30 +75,43 @@ const FooterButton = styled.button`
   border: none;
 `
 
-const Footer = () => (
-  <StyledFooter>
+const Footer = () => {
+ 
+  const navigate = useNavigate();
+  const handledriverLog = () => navigate("driverlogin")
+  const handleAbout = () => navigate("About")
+  const handleContact = () => navigate("Contact")
+
+    
+   
+    return (
+      <StyledFooter>
     <Container>
       <Row>
         <Column>
           <Heading></Heading>
-
-
-          <FooterButton></FooterButton>
+          <FooterButton
+          onClick={handleAbout}>ABOUT</FooterButton>
         </Column>
         <Column>
           <Heading></Heading>
-        <FooterButton></FooterButton>
+        <FooterButton
+        onClick={handleContact}>CONTACT</FooterButton>
         </Column>
         <Column>
           <Heading></Heading>
-          <FooterButton></FooterButton>
+          <Button   variant="contained"
+                    color="primary"
+                    size="large" 
+                    onClick={handledriverLog}>DRIVER LOGIN</Button>
         </Column>
       </Row>
     </Container>
-    <Copyright>
+      <Copyright>
         <p>Copyright &copy; 82 Learn Pty Ltd {moment().format("YYYY")}.</p>
       </Copyright>
-  </StyledFooter>
-);
-
-export default Footer;
+      </StyledFooter>
+    );
+  };
+  
+  export default Footer;

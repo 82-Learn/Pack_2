@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Fragment } from "react";
-import Footer from "./components/footer/Footer";
 import AppRouter from "./components/routes/AppRouter";
 import { GlobalStyle } from "./globals/global.styles";
 
@@ -10,7 +9,6 @@ function App() {
       <Fragment>
         <GlobalStyle />
           <AppRouter />
-        <Footer />
       </Fragment>
     </>
   );
